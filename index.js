@@ -1,5 +1,6 @@
 import { RENDERERS } from './public/data.js';
 import { daysBetween, getDay } from './public/date.js';
+import { setupTheme } from './public/theme.js';
 
 window.addEventListener('load', load);
 
@@ -12,6 +13,8 @@ const TODAY = new Date();
 function load() {
     const table = document.getElementById('table');
     table.innerHTML += getTableBody();
+
+    setupTheme();
 }
 
 function getTableBody() {
