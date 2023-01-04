@@ -27,5 +27,5 @@ function tempoRunLength(n) {
 }
 
 function longRunLength(n) {
-    return 21 - n;
+    return 8 + n;
 }
