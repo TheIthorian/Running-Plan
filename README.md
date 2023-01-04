@@ -82,4 +82,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [issues-url]: https://github.com/TheIthorian/Running-Plan/issues
 [license-shield]: https://img.shields.io/github/license/TheIthorian/Running-Plan.svg?style=for-the-badge
 [license-url]: https://github.com/TheIthorian/Running-Plan/blob/master/LICENSE.txt
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/screenshot2.png
