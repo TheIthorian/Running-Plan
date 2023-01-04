@@ -47,7 +47,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://theithorian.github.io/Running-Plan/)
 
 I wanted a shared training plan that I could use to make sure I'm on track to run a half marathon.
 
