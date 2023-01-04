@@ -21,7 +21,7 @@
     <a href="https://github.com/TheIthorian/Running-Plan"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/TheIthorian/Running-Plan">View Demo</a>
+    <a href="https://theithorian.github.io/Running-Plan/">View Demo</a>
     ·
     <a href="https://github.com/TheIthorian/Running-Plan/issues">Report Bug</a>
     ·
@@ -38,17 +38,8 @@
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -67,12 +58,6 @@ I wanted a shared training plan that I could use to make sure I'm on track to ru
 ## Getting Started
 
 Not much needed to get started. Just open the index.html.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- USAGE EXAMPLES -->
-
-## Usage
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
