@@ -1,0 +1,7 @@
+tr.current-week {
+    background-color: red;
+}
+
+td.current-day {
+    background-color: green;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "runningplan",
+  "version": "1.0.0",
+  "description": "Running planner",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheIthorian/Running-Plan.git"
+  },
+  "author": "TheIthorian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheIthorian/Running-Plan/issues"
+  },
+  "homepage": "https://github.com/TheIthorian/Running-Plan#readme"
+}
