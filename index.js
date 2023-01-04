@@ -5,7 +5,8 @@ window.addEventListener('load', load);
 const NUMBER_OF_WEEKS = 13;
 const FIRST_DAY = new Date(2023, 0, 2);
 const TARGET_DAY = new Date(2023, 3, 2);
-const TODAY = new Date(2023, 0, 2);
+// const TODAY = new Date(2023, 0, 2);
+const TODAY = new Date();
 
 function load() {
     const table = document.getElementById('table');
@@ -15,32 +16,35 @@ function load() {
 function getTableBody() {
     let html = '';
     for (let i = 0; i <= NUMBER_OF_WEEKS; i++) {
-        const row = renderRow(i);
-        html += row;
+        html += renderRow(i);
     }
     return html;
 }
 
-function renderRow(n) {
-    const currentDay = daysBetween(FIRST_DAY, TODAY);
-    const currentWeek = Math.floor(currentDay / 7);
-    console.log(currentDay / 7);
+function renderRow(rowNumber) {
+    const currentCol = daysBetween(FIRST_DAY, TODAY);
+    const currentRow = Math.floor(currentCol / 7);
 
-    const rowClass = currentWeek === n ? ['current-week'] : [];
+    const rowClass = [];
+    if (currentRow === rowNumber) rowClass.push('current-week');
 
-    const row = RENDERERS.map(renderer => renderer(n))
-        .map((val, index) => {
-            const cellClass = [];
-            if (currentWeek === n && getDay(TODAY) === index) cellClass.push('current-day');
-
-            return `<td class="${cellClass.join(' ')}">${val}</td>`;
-        })
+    const row = RENDERERS.map(renderer => renderer(rowNumber))
+        .map((val, weekDayNumber) =>
+            renderCell(val, currentRow === rowNumber && getDay(TODAY) === weekDayNumber)
+        )
         .join('\n');
 
     return `<tr class="${rowClass.join(' ')}">
-    <td>${n}</td>
+    <td>${rowNumber}</td>
         ${row}
     </tr>`;
+}
+
+function renderCell(content, isToday) {
+    const cellClass = [];
+    if (isToday) cellClass.push('current-day');
+
+    return `<td class="${cellClass.join(' ')}">${content}</td>`;
 }
 
 function treatAsUTC(date) {
