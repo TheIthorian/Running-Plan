@@ -35,12 +35,18 @@ body {
     color: var(--font);
 }
 
-tr.current-week {
-    background-color: var(--highlight-med);
+#container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100vw;
+    overflow: scroll;
 }
 
-td.current-day {
-    background-color: var(--highlight-high);
+#ui-controls {
+    position: absolute;
+    right: 10px;
+    padding: 10px;
 }
 
 #table-container {
