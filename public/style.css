@@ -12,18 +12,21 @@
 
 :root {
     --light-background: #f9fcfb;
+    --light-background-2: #d0d4d2;
     --light-highlight-low: #e98b97;
     --light-highlight-med: #dd4f63;
     --light-highlight-high: #644fb6;
     --light-font: #000000;
 
     --dark-background: #202225;
+    --dark-background-2: #18191c;
     --dark-highlight-low: #e98b97;
     --dark-highlight-med: #dd4f63;
     --dark-highlight-high: #957bfc;
     --dark-font: #f1f2e7;
 
     --background: var(--dark-background);
+    --background-2: var(--dark-background-2);
     --highlight-low: var(--dark-highlight-low);
     --highlight-med: var(--dark-highlight-med);
     --highlight-high: var(--dark-highlight-high);
@@ -56,6 +59,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100vw;
+    min-width: 800px;
 }
 
 #table {
@@ -70,9 +74,21 @@ table > tr {
     padding: 5px;
 }
 
+tr:nth-child(odd) {
+    background-color: var(--background-2);
+}
+
 th,
 td {
     padding: 10px;
+}
+
+tr.current-week {
+    background-color: var(--highlight-med);
+}
+
+td.current-day {
+    background-color: var(--highlight-high);
 }
 
 .hidden {
@@ -82,17 +98,4 @@ td {
 button {
     padding: 5px;
     cursor: pointer;
-}
-
-#container {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100vw;
-}
-
-#ui-controls {
-    position: absolute;
-    right: 10px;
-    padding: 10px;
 }
