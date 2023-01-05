@@ -31,6 +31,7 @@ export function setupTheme() {
 
 function setLightTheme() {
     setColor('--background', 'var(--light-background)');
+    setColor('--background-2', 'var(--light-background-2)');
     setColor('--highlight-low', 'var(--light-highlight-low)');
     setColor('--highlight-med', 'var(--light-highlight-med)');
     setColor('--highlight-high', 'var(--light-highlight-high)');
@@ -39,6 +40,7 @@ function setLightTheme() {
 
 function setDarkTheme() {
     setColor('--background', 'var(--dark-background)');
+    setColor('--background-2', 'var(--dark-background-2)');
     setColor('--highlight-low', 'var(--dark-highlight-low)');
     setColor('--highlight-med', 'var(--dark-highlight-med)');
     setColor('--highlight-high', 'var(--dark-highlight-high)');
