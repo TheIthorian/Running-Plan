@@ -43,7 +43,7 @@ body {
     align-items: flex-start;
     flex-direction: column;
     width: 100vw;
-    overflow: scroll;
+    overflow: auto;
 }
 
 #ui-controls {
